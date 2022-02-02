@@ -1,5 +1,9 @@
 # security-notebooks
+Getting this a docker python data science environment running 
+https://mybinder.org/v2/gh/japu0992/security-notebooks/main
 
+
+# Using this repo: 
 to launch a jupyter stack datascience noteboook:
 
 make sure docker containers stopped running
