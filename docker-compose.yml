@@ -1,0 +1,10 @@
+version: "3.9"  # the docker-compose.yml specification version that this file uses
+services:
+  jupyter: # arbitrary key/name for the container
+    build: . # look in the local directory for the Dockerfile
+    image: japu0992/my-datascience-notebook # `push` to this repository (defaults to DockerHub)
+    ports:
+      - "10000:8888" # publish container port 8888 to host port 8888
+    volumes:
+      - .:/home/jovyan/work # Mount the local directory to container-directory `/home/jovyan/work`
+                            # (The jupyter-docker-stacks docs tell us to mount it here)
