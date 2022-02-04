@@ -1,5 +1,5 @@
 # Start from a core stack version
-FROM jupyter/datascience-notebook:b418b67c225b
+FROM japu0992/my-datascience-notebook
 # Install from requirements.txt file
 COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
 RUN pip install --quiet --no-cache-dir --requirement /tmp/requirements.txt && \
